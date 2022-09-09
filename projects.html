@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Jake Lovrin - Projects Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/video-console.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/509da8b99a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/saladgun.png"></a>
+            <div class="nav-links" id="navLinks">
+                <div class="tinyButtons">
+                    <i class="fa-solid fa-xmark icons" onclick="hideMenu()"></i>
+                </div>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+
+            </div>
+            <div class="tinyButtons">
+                <i class="fa-solid fa-bars icons" onclick="showMenu()"></i>
+            </div>
+        </nav>
+        <!-- <div class="text-box">
+            <h1>Scroll down!</h1> -->
+            <!-- <p>Lorem ipsum etc<br>haha line break go brrrr</p> -->
+            <!-- <a href="" class="hero-btn">This site is wildly under construction.<br>Check back soon for more!</a>
+        </div> -->
+        <section class="projects_pagetitle_text">
+            <h1>Projects</h1>
+            <p>Thanks for checking out the projects page!<br>These displays will be updated with their own dedicated pages in the future!
+            </p>
+    
+            <div class="row">
+                <div class="column">
+                    <img src="images/slime64.png">
+                    <div class="layer">
+                        <h3>Slime 64</h3>
+                    </div>
+                </div>
+                <div class="column">
+                    <img src="images/CrestoriaBotLogoSmol.png">
+                    <div class="layer">
+                        <h3>Vision Orb</h3>
+                    </div>
+                </div>
+                <div class="column">
+                    <img src="images/AB.png">
+                    <div class="layer">
+                        <h3>This site</h3>
+                    </div>
+                </div>
+            </div>
+    
+        </section>
+
+    </section>
+
+    <!-- <section class="section2">
+        <h1>Projects</h1>
+        <p>He better be bigger than he is here, if you know what I mean.</p>
+
+        <div class="row">
+            <div class="column">
+                <h3>Wahoo</h3>
+                <p>Beep boop game developer</p>
+            </div>
+            <div class="column">
+                <h3>Wahey</h3>
+                <p>Beep boop game developer 2</p>
+            </div>
+            <div class="column">
+                <h3>Zoo Wee Mama</h3>
+                <p>Beep boop game developer 3</p>
+            </div>
+        </div>
+
+    </section> -->
+
+    <!-- <section class="profile_main">
+        <h1>Projects</h1>
+        <p>Thanks for checking out the projects page! Click one below to get a more in-depth look.
+        </p>
+
+        <div class="row">
+            <div class="column">
+                <img src="images/slime64.png">
+                <div class="layer">
+                    <h3>Slime 64</h3>
+                </div>
+            </div>
+            <div class="column">
+                <img src="images/CrestoriaBotLogoSmol.png">
+                <div class="layer">
+                    <h3>Vision Orb</h3>
+                </div>
+            </div>
+            <div class="column">
+                <img src="images/AB.png">
+                <div class="layer">
+                    <h3>This site</h3>
+                </div>
+            </div>
+        </div>
+
+    </section> -->
+
+    <section class="footer">
+        <!-- <h4>Socials</h4> -->
+        <p>Feel free to check out my socials! Thanks for coming!</p>
+
+        <div class="icons">
+            <i class="fa-brands fa-facebook pointerHover" onclick="goLink('https://www.facebook.com/jake.lovrin/')"></i>
+            <i class="fa-brands fa-twitter pointerHover" onclick="goLink('https://twitter.com/jakeop4444')"></i>
+            <i class="fa-brands fa-instagram pointerHover" onclick="goLink('https://www.instagram.com/jakeop4444/')"></i>
+            <i class="fa-brands fa-linkedin pointerHover" onclick="goLink('https://www.linkedin.com/in/jake-lovrin-72b184176/')"></i>
+        </div>
+
+        <div class="marquee-outer">
+            <div class="marquee-inner"><img src="images/furret_right.gif" width="181" height="102" alt="Furret"></div>
+        </div>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+        function goLink(link){
+            location.href = link
+        }
+
+        var bistory = 1337;
+    </script>
+
+</body>
+</html>
